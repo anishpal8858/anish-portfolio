@@ -1,0 +1,172 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .skill-box {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #007bff;
+    letter-spacing: 1px;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666;
+    letter-spacing: 3px;
+}
+
+.main-name {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #111;
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+body.dark-mode .main-name {
+    color: #fff;
+}
+
+.profession {
+    font-size: 1.8rem;
+    color: #007bff;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.education {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+body.dark-mode .education {
+    color: #bbb;
+}
+
+.tagline {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #777;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Skills Section */
+.skills {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.skills h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    background: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+    color: #888;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Responsive for Mobile Devices */
+@media (max-width: 768px) {
+    .main-name {
+        font-size: 3rem;
+    }
+    .profession {
+        font-size: 1.4rem;
+    }
+}
