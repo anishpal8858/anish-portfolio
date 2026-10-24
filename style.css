@@ -396,3 +396,18 @@ footer {
     font-size: 14px;
   }
 }
+body {
+  background-color: #081225 !important;
+  color: white !important;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #0a172b !important;
+}
+
+.logo,
+.section-title span,
+.hero h1 span {
+  color: #39c6f4 !important;
+}
