@@ -1,11 +1,11 @@
 
 :root {
-  --bg: #87CEEB;
-  --panel: #101e35;
-  --text: #edf5ff;
-  --muted: #a9bad0;
-  --cyan: #39c6f4;
-  --border: #263b58;
+  --bg: #FFF1F5;
+  --panel: #FFFFFF;
+  --text: #123B66;
+  --muted: #456789;
+  --cyan: #38BDF8;
+  --border: #F2B8CE;
 }
 
 * {
@@ -35,7 +35,7 @@ a {
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
-  background: #0a172b;
+  background: #F8D7E3;
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
@@ -62,7 +62,7 @@ nav {
 
 nav a {
   font-size: 14px;
-  color: var(--muted);
+  color: var(--text);
   transition: color 0.2s;
 }
 
@@ -75,7 +75,7 @@ nav a:hover {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  background: linear-gradient(90deg, #081225, #12365a, #081225);
+  background: linear-gradient(90deg, #F8D7E3, #FFFFFF, #F8D7E3);
   border-top: 1px solid var(--cyan);
   border-bottom: 1px solid var(--cyan);
   padding: 12px 0;
@@ -90,7 +90,7 @@ nav a:hover {
 .marquee-content span {
   flex-shrink: 0;
   padding-right: 55px;
-  color: var(--cyan);
+  color: #123B66;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1.5px;
@@ -127,7 +127,7 @@ nav a:hover {
 }
 
 .eyebrow {
-  color: var(--cyan);
+  color: #38BDF8;
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -161,7 +161,7 @@ nav a:hover {
   display: inline-block;
   padding: 11px 20px;
   background: var(--cyan);
-  color: #061222;
+  color: #123B66;
   border: 1px solid var(--cyan);
   border-radius: 7px;
   font-weight: bold;
@@ -176,7 +176,7 @@ nav a:hover {
 
 .btn-outline {
   background: transparent;
-  color: var(--cyan);
+  color: #123B66;
 }
 
 .btn.small {
@@ -194,14 +194,17 @@ nav a:hover {
   border: 1px solid var(--cyan);
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 0 35px #39c6f422;
+  box-shadow: 0 0 25px #38BDF822;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .photo-box img {
   display: block;
   width: 100%;
   height: 235px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   border-radius: 12px;
 }
 
@@ -213,13 +216,14 @@ nav a:hover {
   font-size: 70px;
   font-weight: bold;
   color: var(--cyan);
-  background: #172b47;
+  background: #F8D7E3;
   border-radius: 12px;
 }
 
 .photo-box p {
   font-weight: bold;
   margin-top: 10px;
+  color: var(--text);
 }
 
 .photo-box small,
@@ -227,9 +231,17 @@ nav a:hover {
   color: var(--muted);
 }
 
+.photo-box p,
+.photo-box small {
+  display: block;
+  margin: 8px 0;
+  overflow-wrap: anywhere;
+}
+
 .section-title {
   font-size: clamp(28px, 4vw, 38px);
   margin-bottom: 28px;
+  color: var(--text);
 }
 
 .panel,
@@ -260,7 +272,7 @@ nav a:hover {
 }
 
 .card h3 {
-  color: var(--cyan);
+  color: #123B66;
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -282,9 +294,9 @@ nav a:hover {
 .tag {
   display: inline-block;
   padding: 8px 14px;
-  border: 1px solid #245a79;
-  background: #102d46;
-  color: var(--cyan);
+  border: 1px solid #F2B8CE;
+  background: #FCE4ED;
+  color: #123B66;
   border-radius: 30px;
   font-size: 14px;
 }
@@ -306,13 +318,13 @@ nav a:hover {
   flex: 1;
   padding: 12px;
   border: 1px solid var(--border);
-  background: var(--panel);
+  background: #FFFFFF;
   color: var(--text);
   border-radius: 7px;
 }
 
 .text-link {
-  color: var(--cyan);
+  color: #123B66;
   font-weight: bold;
   display: inline-block;
   margin-top: 10px;
@@ -321,8 +333,8 @@ nav a:hover {
 footer {
   text-align: center;
   padding: 28px 15px;
-  background: #050d1a;
-  color: var(--muted);
+  background: #F8D7E3;
+  color: #123B66;
   border-top: 1px solid var(--border);
 }
 
@@ -336,7 +348,7 @@ footer {
   border: 0;
   border-radius: 50%;
   background: var(--cyan);
-  color: #061222;
+  color: #123B66;
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
@@ -395,41 +407,4 @@ footer {
   .marquee-content span {
     font-size: 14px;
   }
-}
-body {
-  background-color: #081225 !important;
-  color: white !important;
-  font-family: Arial, sans-serif;
-}
-
-.header {
-  background-color: #0a172b !important;
-}
-
-.logo,
-.section-title span,
-.hero h1 span {
-  color: #39c6f4 !important;
-}
-
-.photo-box {
-  width: 260px;
-  box-sizing: border-box;
-  overflow: hidden;
-  text-align: center;
-}
-
-.photo-box img {
-  display: block;
-  width: 100%;
-  height: 235px;
-  object-fit: contain;
-  object-position: center;
-}
-
-.photo-box p,
-.photo-box small {
-  display: block;
-  margin: 8px 0;
-  overflow-wrap: anywhere;
 }
