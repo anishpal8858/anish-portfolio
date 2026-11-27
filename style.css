@@ -1,11 +1,11 @@
 
 :root {
-  --bg: #FFF1F5;
+  --bg: #EAF6FF;
   --panel: #FFFFFF;
   --text: #123B66;
   --muted: #456789;
   --cyan: #38BDF8;
-  --border: #F2B8CE;
+  --border: #B9DDF5;
 }
 
 * {
@@ -35,7 +35,7 @@ a {
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
-  background: #F8D7E3;
+  background: #D6EEFF;
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
@@ -71,11 +71,12 @@ nav a:hover {
 }
 
 /* Moving Marquee */
+
 .marquee {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  background: linear-gradient(90deg, #F8D7E3, #FFFFFF, #F8D7E3);
+  background: linear-gradient(90deg, #D6EEFF, #FFFFFF, #D6EEFF);
   border-top: 1px solid var(--cyan);
   border-bottom: 1px solid var(--cyan);
   padding: 12px 0;
@@ -106,7 +107,9 @@ nav a:hover {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .marquee-content { animation: none; }
+  .marquee-content {
+    animation: none;
+  }
 }
 
 .section {
@@ -120,6 +123,7 @@ nav a:hover {
   align-items: center;
   justify-content: space-between;
   gap: 50px;
+  background: var(--bg);
 }
 
 .hero-text {
@@ -216,7 +220,7 @@ nav a:hover {
   font-size: 70px;
   font-weight: bold;
   color: var(--cyan);
-  background: #F8D7E3;
+  background: #D6EEFF;
   border-radius: 12px;
 }
 
@@ -294,8 +298,8 @@ nav a:hover {
 .tag {
   display: inline-block;
   padding: 8px 14px;
-  border: 1px solid #F2B8CE;
-  background: #FCE4ED;
+  border: 1px solid #B9DDF5;
+  background: #DDF1FF;
   color: #123B66;
   border-radius: 30px;
   font-size: 14px;
@@ -333,7 +337,7 @@ nav a:hover {
 footer {
   text-align: center;
   padding: 28px 15px;
-  background: #F8D7E3;
+  background: #D6EEFF;
   color: #123B66;
   border-top: 1px solid var(--border);
 }
